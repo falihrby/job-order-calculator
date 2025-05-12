@@ -26,7 +26,7 @@ h1.title {
 }
 label {
   display: block;
-  margin: 0.2rem 0 0.2rem;
+  margin: 0.8rem 0 0.2rem;
   font-size: 0.9rem;
 }
 input[type="text"], input[type="number"] {
