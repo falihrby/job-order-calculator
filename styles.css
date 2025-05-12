@@ -23,6 +23,7 @@ h1.title {
   padding: 30px;
   background: white;
   border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 .form-section, .result-section {
   flex: 1 1 280px;
