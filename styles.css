@@ -1,10 +1,14 @@
 * { box-sizing: border-box; }
 body {
-  font-family: Arial, sans-serif;
-  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  height: 100vh;
+  background: url('/background.jpg') no-repeat center center/cover;
   margin: 0;
-  padding: 0;
-  background-color:rgb(230, 230, 230);
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 h1.title {
   text-align: center;
@@ -12,21 +16,20 @@ h1.title {
   font-size: 1.5rem;
 }
 .container {
-  max-width: 800px;
-  margin: auto;
-  background-color: white;
-  padding: 1rem;
-  border-radius: 0.8rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 40px;
   display: flex;
-  gap: 4rem;
-  flex-wrap: wrap;
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
 }
 .form-section, .result-section {
   flex: 1 1 280px;
 }
 label {
   display: block;
-  margin: 0.2rem 0 0.2rem;
+  margin: 0.8rem 0 0.2rem;
   font-size: 0.9rem;
 }
 input[type="text"], input[type="number"] {
