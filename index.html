@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Job Order Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1 class="title">Job Order Calculator</h1>
+  <div class="container">
+    <div class="form-section">
+      <label for="materialCost">Biaya Material (Rp):</label>
+      <input type="text" id="materialCost" placeholder="0" />
+
+      <label for="laborCost">Biaya Tenaga Kerja (Rp/jam):</label>
+      <input type="text" id="laborCost" placeholder="0" />
+
+      <label for="overhead">Biaya Overhead (%):</label>
+      <input type="number" id="overhead" value="10" />
+      <small class="hint">Biaya tidak langsung (listrik, sewa, transportasi)</small>
+
+      <div class="checkbox">
+        <input type="checkbox" id="includeTax" />
+        <label for="includeTax">Tambahkan PPN 11%</label>
+      </div>
+    </div>
+
+    <div class="result-section">
+      <h2>Hasil Estimasi</h2>
+      <p><span class="bold">Biaya Material:</span> <span id="materialResult">Rp 0</span></p>
+      <p><span class="bold">Biaya Tenaga Kerja:</span> <span id="laborResult">Rp 0</span></p>
+      <p><span class="bold">Biaya Overhead:</span> <span id="overheadResult">Rp 0</span></p>
+      <p><span class="bold">Total Sebelum Pajak:</span> <span id="totalResult">Rp 0</span></p>
+      <p><span class="bold">PPN 11%:</span> <span id="ppnResult">Rp 0</span></p>
+      <p><span class="bold">Total Setelah Pajak:</span> <span id="finalResult">Rp 0</span></p>
+
+      <div class="notes">
+        <p><strong>Catatan:</strong></p>
+        <ul>
+          <li>Estimasi ini bersifat kasar dan dapat berubah tergantung kondisi lapangan.</li>
+          <li>Biaya Tenaga Kerja dihitung dari jam kerja × tarif per jam.</li>
+          <li>Biaya Overhead mencakup biaya tidak langsung seperti listrik, sewa workshop, dan transportasi.</li>
+          <li>PPN 11% hanya dihitung jika checkbox dicentang.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

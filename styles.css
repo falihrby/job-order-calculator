@@ -1,0 +1,66 @@
+* { box-sizing: border-box; }
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  background-color:rgb(230, 230, 230);
+}
+h1.title {
+  text-align: center;
+  margin: 1.5rem 0;
+  font-size: 1.5rem;
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+.form-section, .result-section {
+  flex: 1 1 280px;
+}
+label {
+  display: block;
+  margin: 0.2rem 0 0.2rem;
+  font-size: 0.9rem;
+}
+input[type="text"], input[type="number"] {
+  width: 100%;
+  padding: 0.4rem;
+  font-size: 0.9rem;
+  border-radius: 0.4rem;
+  border: 1px solid #ccc;
+}
+.checkbox {
+  margin-top: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.result-section h2 {
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+.result-section p {
+  margin: 0.4rem 0;
+  font-size: 0.9rem;
+}
+.bold {
+  font-weight: bold;
+}
+.notes {
+  background-color: #f1f3f5;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+}
+.notes ul {
+  padding-left: 1.2rem;
+  margin: 0.3rem 0;
+}
