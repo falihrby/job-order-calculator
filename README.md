@@ -10,7 +10,6 @@ Built using HTML, CSS, and JavaScript.
 - Checkbox to include 11% PPN (VAT)
 - Real-time calculation and estimation result
 - Clear explanation for each field to help users understand
-- Fully responsive layout
 
 ## 📷 Screenshot
 ![Preview](./preview.png)
